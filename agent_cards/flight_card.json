@@ -1,0 +1,22 @@
+{
+  "name": "Flight Search Agent",
+  "description": "Searches for flights by route and date. Returns structured flight options with pricing. Supports real-time streaming of search progress.",
+  "url": "http://localhost:5001",
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false
+  },
+  "skills": [
+    {
+      "id": "search_flights",
+      "name": "Search Flights",
+      "description": "Find available flights between two cities for specified dates and passenger count.",
+      "tags": ["flights", "travel", "search"],
+      "inputModes": ["text"],
+      "outputModes": ["text", "data"]
+    }
+  ],
+  "defaultInputModes": ["text"],
+  "defaultOutputModes": ["data"]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Itinerary Generator Agent",
+  "description": "Combines flight and hotel data with destination research to produce a complete travel itinerary. Supports streaming for long generation tasks.",
+  "url": "http://localhost:5003",
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false
+  },
+  "skills": [
+    {
+      "id": "generate_itinerary",
+      "name": "Generate Itinerary",
+      "description": "Create a day-by-day travel itinerary from flight and hotel artifacts.",
+      "tags": ["itinerary", "travel", "planning"],
+      "inputModes": ["text", "data"],
+      "outputModes": ["text", "data"]
+    }
+  ],
+  "defaultInputModes": ["data"],
+  "defaultOutputModes": ["text", "data"]
+}

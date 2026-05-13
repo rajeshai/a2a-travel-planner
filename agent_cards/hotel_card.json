@@ -1,0 +1,22 @@
+{
+  "name": "Hotel Search Agent",
+  "description": "Searches for hotel accommodations by city, dates, and guest count. Returns structured hotel options.",
+  "url": "http://localhost:5002",
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "skills": [
+    {
+      "id": "search_hotels",
+      "name": "Search Hotels",
+      "description": "Find available hotels in a city for specified dates and guest count.",
+      "tags": ["hotels", "travel", "accommodation"],
+      "inputModes": ["text"],
+      "outputModes": ["data"]
+    }
+  ],
+  "defaultInputModes": ["text"],
+  "defaultOutputModes": ["data"]
+}
